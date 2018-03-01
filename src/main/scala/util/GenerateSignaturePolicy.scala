@@ -17,10 +17,10 @@ import org.json.JSONObject
 class GenerateSignaturePolicy extends HttpServlet{
 
     override def doGet(request: HttpServletRequest, response: HttpServletResponse): Unit = {
-        val endpoint = "oss-cn-beijing.aliyuncs.com"
-        val accessId = "lC2a3NXist8peEDm"
-        val accessKey = "WP59s7IZkHBqIWWs57Ho0yx9B28S9m"
-        val bucket = "blackmirror"
+        val endpoint = "*"
+        val accessId = "*"
+        val accessKey = "*"
+        val bucket = "*"
         val dir = "test/"
         val host = "http://" + bucket + "." + endpoint
         val client = new OSSClient(endpoint, accessId, accessKey)

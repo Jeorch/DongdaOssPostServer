@@ -21,11 +21,11 @@ import org.json.JSONObject
 class GenerateSecurityToken  extends HttpServlet{
 
     override def doGet(request: HttpServletRequest, response: HttpServletResponse): Unit = {
-        val endpoint = "sts.cn-beijing.aliyuncs.com"
-        val accessKeyId = "LTAIocDzvBsFxylm"
-        val accessKeySecret = "tzE4WoCYSxCU97K1M0PAa8paOQEYo2"
-        val roleArn = "acs:ram::1696525727043311:role/aliyunosstokengeneratorrole"
-        val roleSessionName = "alfred"
+        val endpoint = "*"
+        val accessKeyId = "*"
+        val accessKeySecret = "*"
+        val roleArn = "*"
+        val roleSessionName = "*"
 //    val policy = "{\n" + "    \"Version\": \"1\", \n" + "    \"Statement\": [\n" + "        {\n" + "            \"Action\": [\n" + "                \"oss:*\"\n" + "            ], \n" + "            \"Resource\": [\n" + "                \"acs:oss:*:*:*\" \n" + "            ], \n" + "            \"Effect\": \"Allow\"\n" + "        }\n" + "    ]\n" + "}"
         try {
             DefaultProfile.addEndpoint("", "", "Sts", endpoint)
